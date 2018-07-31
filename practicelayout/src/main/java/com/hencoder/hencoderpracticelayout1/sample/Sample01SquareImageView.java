@@ -30,6 +30,7 @@ public class Sample01SquareImageView extends ImageView {
         } else {
             measuredHeight = measuredWidth;
         }
+
         setMeasuredDimension(measuredWidth, measuredHeight);
     }
 }
