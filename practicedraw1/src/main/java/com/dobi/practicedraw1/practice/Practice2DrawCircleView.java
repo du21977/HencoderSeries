@@ -40,7 +40,7 @@ public class Practice2DrawCircleView extends View {
 
         canvas.drawCircle(getWidth()/2 -dip2px(60),100,100,mPaint);
 
-        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStyle(Paint.Style.STROKE); //空心
         canvas.drawCircle(getWidth()/2 +dip2px(60),100,100,mPaint);
 
         mPaint.setStyle(Paint.Style.FILL);
@@ -48,7 +48,7 @@ public class Practice2DrawCircleView extends View {
         canvas.drawCircle(getWidth()/2 - dip2px(60),getHeight()/2 +dip2px(60),100,mPaint);
 
         mPaint.setColor(Color.BLACK);
-        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStyle(Paint.Style.STROKE); //空心
         mPaint.setStrokeWidth(20);//线条为20个像素
         canvas.drawCircle(getWidth()/2+dip2px(60),getHeight()/2+dip2px(60),100,mPaint);
     }

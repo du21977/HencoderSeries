@@ -34,6 +34,8 @@ public class Practice5DrawOvalView extends View {
         mPaint.setAntiAlias(true);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(Color.BLACK);
+
+        //跟画Rect一样，需要left--top--right---bottom ----左上右下
         canvas.drawOval(getWidth()/2 - DensityUtitls.dip2px(80),getHeight()/2-DensityUtitls.dip2px(40),getWidth()/2 + DensityUtitls.dip2px(80),getHeight()/2+DensityUtitls.dip2px(40),mPaint);
     }
 }
