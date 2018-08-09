@@ -3,6 +3,7 @@ package com.hencoder.hencoderpracticelayout1.sample;
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.ImageView;
 
 
@@ -21,10 +22,15 @@ public class Sample01SquareImageView extends ImageView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);//必须要这个才能得到测量大小getMeasuredWidth();
+
 
         int measuredWidth = getMeasuredWidth();
         int measuredHeight = getMeasuredHeight();
+
+        Log.e("onMeasure-measuredWidth",measuredWidth+"   0");
+        Log.e("onMeasure-meauredHeight",measuredHeight+"   0");
+
         if (measuredWidth > measuredHeight) {
             measuredWidth = measuredHeight;
         } else {
@@ -32,5 +38,19 @@ public class Sample01SquareImageView extends ImageView {
         }
 
         setMeasuredDimension(measuredWidth, measuredHeight);
+
+
+        /*
+        int width = MeasureSpec.getSize(widthMeasureSpec);
+        int height = MeasureSpec.getSize(heightMeasureSpec);
+        Log.e("onMeasure-width",width+"   0");
+        Log.e("onMeasure-height",height+"   0");
+        if (width > height) {
+            width = height;
+        } else {
+            height = width;
+        }
+        setMeasuredDimension(width,height);
+        */
     }
 }

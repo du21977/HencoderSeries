@@ -38,6 +38,9 @@ public class Practice2DrawCircleView extends View {
 //        练习内容：使用 canvas.drawCircle() 方法画圆
 //        一共四个圆：1.实心圆 2.空心圆 3.蓝色实心圆 4.线宽为 20 的空心圆
 
+        //第一个第二个参数是圆心的位置，第三个参数是半径  单位像素
+
+
         canvas.drawCircle(getWidth()/2 -dip2px(60),100,100,mPaint);
 
         mPaint.setStyle(Paint.Style.STROKE); //空心
