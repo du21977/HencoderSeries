@@ -12,6 +12,9 @@ import android.util.AttributeSet;
 
 import com.hencoder.hencoderpracticedraw5.R;
 
+/**
+ * 继续ImageView
+ */
 public class Sample01AfterOnDrawView extends AppCompatImageView {
     public static final boolean DEBUG = true;
 

@@ -36,7 +36,9 @@ public class Practice3DrawRectView extends View {
 //        练习内容：使用 canvas.drawRect() 方法画矩形
 
        // canvas.drawRect(Rect rect,paint);
-        //left top  right bottom
+        //left top  right bottom  左上右下
         canvas.drawRect(getWidth()/2- DensityUtitls.dip2px(60),DensityUtitls.dip2px(60),getWidth()/2+ DensityUtitls.dip2px(60),DensityUtitls.dip2px(180),mPaint);
+
+
     }
 }

@@ -35,11 +35,13 @@ public class Practice8DrawArcView extends View {
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setAntiAlias(true);
 
+        //1-4参数左上右下
         // 第5个参数为起始角度的位置 ，第六个参数为绘制的的角度数，第七个参数是是否连接到圆心
         canvas.drawArc(getWidth()/2- DensityUtitls.dip2px(60),getHeight()/2-DensityUtitls.dip2px(40),getWidth()/2+DensityUtitls.dip2px(60),getHeight()/2+DensityUtitls.dip2px(40)
                         ,-100,100,true,mPaint);//封口就是扇形
 
 
+        //第6个参数是需要绘制多少角度，不是到哪个角度---------------绘制方向顺时针
 
         //x正方向为0度角位置  ，顺时针为正角度方向，逆时针为负角度方向
         canvas.drawArc(getWidth()/2- DensityUtitls.dip2px(60),getHeight()/2-DensityUtitls.dip2px(40),getWidth()/2+DensityUtitls.dip2px(60),getHeight()/2+DensityUtitls.dip2px(40)

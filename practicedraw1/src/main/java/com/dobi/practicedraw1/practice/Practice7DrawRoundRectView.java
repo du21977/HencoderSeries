@@ -34,6 +34,7 @@ public class Practice7DrawRoundRectView extends View {
         mPaint.setColor(Color.BLACK);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setAntiAlias(true);
+        //1-4参数----左上右下
         //第五个和第六个参数 是圆角的半径
         canvas.drawRoundRect(getWidth()/2- DensityUtitls.dip2px(60),getHeight()/2-DensityUtitls.dip2px(30)
                             ,getWidth()/2+DensityUtitls.dip2px(60),getHeight()/2+DensityUtitls.dip2px(30),20,20,mPaint);

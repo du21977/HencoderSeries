@@ -37,10 +37,12 @@ public class Practice4DrawPointView extends View {
         mPaint.setAntiAlias(true);
         mPaint.setColor(Color.BLACK);
         mPaint.setStrokeWidth(40); //40个像素
-        mPaint.setStrokeCap(Paint.Cap.ROUND);
+        mPaint.setStrokeCap(Paint.Cap.ROUND);//圆形
+
+        //(x,y)中心位置
         canvas.drawPoint(getWidth()/2- DensityUtitls.dip2px(60),getHeight()/2+DensityUtitls.dip2px(60),mPaint);
 
-        mPaint.setStrokeCap(Paint.Cap.SQUARE);
+        mPaint.setStrokeCap(Paint.Cap.SQUARE);//方形  ---
         canvas.drawPoint(getWidth()/2+ DensityUtitls.dip2px(60),getHeight()/2+DensityUtitls.dip2px(60),mPaint);
     }
 }

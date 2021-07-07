@@ -23,12 +23,14 @@ public class Practice1DrawColorView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
+        super.onDraw(canvas);//父类的onDraw里面啥都没做，空方法，我们来重写，实现我们想要绘制的效果
 
 //        练习内容：使用 canvas.drawColor() 方法把 View 涂成黄色
 //        黄色： Color.YELLOW
 
        // canvas.drawColor(Color.parseColor("#"));
-        canvas.drawColor(Color.YELLOW);
+       // canvas.drawColor(Color.YELLOW);
+//        canvas.drawRGB(255,0,0);//绘制红色
+        canvas.drawARGB(10,255,0,0);//绘制红色
     }
 }
